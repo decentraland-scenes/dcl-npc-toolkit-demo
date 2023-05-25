@@ -1,12 +1,8 @@
 import ReactEcs, { Label, ReactEcsRenderer, UiEntity } from '@dcl/sdk/react-ecs'
 import { NpcUtilsUi } from 'dcl-npc-toolkit'
+import { exampleUI1 } from './ExampleUI'
 
-const SceneOwnedUi = () => 
-<UiEntity>
-  <NpcUtilsUi />
-  { /* rest of user defined UI */ }
-</UiEntity>
-
+const SceneOwnedUi = () => [NpcUtilsUi(), exampleUI1()]
 
 export function setupUi() {
   ReactEcsRenderer.setUiRenderer(SceneOwnedUi)
