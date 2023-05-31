@@ -8,7 +8,23 @@ export const exampleUI1 = () => {
       uiTransform={{
         positionType: 'absolute',
         width: 926,
-        height: 300
+        height: 300,
+        position: { left: '10%', top: '50%' }
+      }}
+    ></Label>
+  )
+}
+
+export const exampleUI2 = () => {
+  return (
+    <Label //Invisible Parent
+      value="UI 2"
+      fontSize={60}
+      uiTransform={{
+        positionType: 'absolute',
+        width: 926,
+        height: 300,
+        position: { right: '10%', top: '50%' }
       }}
     ></Label>
   )
