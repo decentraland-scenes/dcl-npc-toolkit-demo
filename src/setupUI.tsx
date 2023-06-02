@@ -3,9 +3,9 @@ import { NpcUtilsUi } from 'dcl-npc-toolkit'
 import { exampleUI1, exampleUI2 } from './ExampleUI'
 
 const SceneOwnedUi = () => [
-  exampleUI1(),
+  // exampleUI1(),
   NpcUtilsUi(),
-  exampleUI2()
+  // exampleUI2()
 ]
 
 export function setupUi() {
