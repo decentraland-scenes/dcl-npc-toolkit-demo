@@ -8,7 +8,7 @@ export let testscript: Dialog[] = [
     // }
   },
   {
-    text: `Can you help me finding my missing gems?`,
+    text: `Can you help me finding my missing gems? Can you help me finding my missing gems? Can you help me finding my missing gems?`,
     isQuestion: true,
     buttons: [
       { label: `Yes!`, goToDialog: 2 },
@@ -29,6 +29,5 @@ export let testscript: Dialog[] = [
     text: `Ok, come back soon`,
     isEndOfDialog: true,
     name: "testing",
-
   }
 ]

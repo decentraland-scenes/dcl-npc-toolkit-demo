@@ -3,6 +3,8 @@ import * as npc from 'dcl-npc-toolkit'
 
 import { setupUi } from './setupUI'
 import { testscript } from './dialogs'
+import { createDogeNpc } from './dogeNpc'
+import { createChatters } from './chatters'
 
 
 // export all the functions required to make the scene work
@@ -16,17 +18,21 @@ export let bob = npc.create(
 	},
 	{
 		type: npc.NPCType.CUSTOM,
-		faceUser:true,
-		portrait:{path: 'images/npc.png'},
+		faceUser: true,
+		portrait: { path: 'images/npc.png' },
 		model: 'models/npc.glb',
 		onActivate: () => {
 			npc.changeIdleAnim(bob, 'TalkLoop')
-     		npc.playAnimation(bob, 'TalkIntro', true, 1.63)
+			npc.playAnimation(bob, 'TalkIntro', true, 1.63)
 			npc.talk(bob, testscript, 0)
 		},
-		onWalkAway: () => { console.log('test on walk away function')
-	}
+		onWalkAway: () => {
+			console.log('test on walk away function')
+		}
 	}
 )
+
+createDogeNpc()
+createChatters()
 
 setupUi()
