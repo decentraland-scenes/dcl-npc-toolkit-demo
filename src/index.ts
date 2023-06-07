@@ -5,6 +5,7 @@ import { setupUi } from './setupUI'
 import { testscript } from './dialogs'
 import { createDogeNpc } from './dogeNpc'
 import { createChatters } from './chatters'
+import { createMarshaNpc } from './marsha'
 
 
 // export all the functions required to make the scene work
@@ -34,5 +35,6 @@ export let bob = npc.create(
 
 createDogeNpc()
 createChatters()
+createMarshaNpc()
 
 setupUi()
