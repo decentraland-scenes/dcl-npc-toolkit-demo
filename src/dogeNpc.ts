@@ -38,16 +38,31 @@ export function createDogeNpc() {
         talk(doge,
           [
             {
-              text: "Debug Text1"
+              text: "Show doge",
             },
             {
-              text: "Debug Text2"
+              text: "Happy Robot",
+              portrait: {
+                path: 'images/simone/happy1.png'
+              }
             },
             {
-              text: "Debug Text3"
+              text: "go back to doge",
             },
             {
-              text: "Debug Text4"
+              text: "Surprised Robot",
+              portrait: {
+                path: 'images/simone/surprise1.png'
+              }
+            },
+            {
+              text: "go back to doge",
+            },
+            {
+              text: "Sad Robot",
+              portrait: {
+                path: 'images/simone/sad1.png'
+              }
             },
             {
               text: "Debug TextF",
