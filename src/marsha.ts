@@ -27,10 +27,10 @@ export function createMarshaNpc(){
           talk(npc,
             [
               {
-                text:"hi"
+                text:"text1"
               },
               {
-                text:"hi2",
+                text:"text2",
                 isEndOfDialog: true
               }
             ]) 
@@ -78,7 +78,7 @@ export function createMarshaNpc(){
         },*/
         darkUI: true,
         coolDownDuration: 3,
-        hoverText: 'Vanilla NPC',
+        hoverText: 'Marsha NPC',
         onlyETrigger: true,
         onlyClickTrigger: false,
         onlyExternalTrigger: false,
@@ -95,7 +95,7 @@ export function createMarshaNpc(){
         entity: cube2,
         opts:{
           button: InputAction.IA_POINTER,
-          hoverText:"Click to talk to Marsha2",
+          hoverText:"Marsha say Hi2",
         }
       },
       (e) => {
@@ -118,10 +118,11 @@ export function createMarshaNpc(){
         entity: cube1,
         opts:{
           button: InputAction.IA_POINTER,
-          hoverText:"Click to talk to Marsha1",
+          hoverText:"Marsha say Hi1",
         }
       },
       (e) => {
+        console.log('talk to me marsha')
         talk(npc,
           [
             {
